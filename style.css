@@ -1,0 +1,105 @@
+/* Profile picture styling */
+.Me {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 6px solid #000000;
+    box-shadow: 0 4px 8px rgb(89, 88, 88);
+    position: relative;
+}
+
+/* Centering container */
+.center-container {
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh;
+    margin: 0;
+}
+
+/* Background styling */
+body::before {
+    content: "";
+    position: fixed;
+    top: -20px;
+    left: -20px;
+    width: calc(100% + 40px);
+    height: calc(100% + 40px);
+    background-color: #2e2e2ed2;
+    /* 008080*/
+    background-image: url("https://th.bing.com/th/id/R.0dacd4acac8020b29e0821cd62f7158b?rik=9aDq6vNGUWq2Uw&pid=ImgRaw&r=0");
+    
+    /* background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/16084.jpg"); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    filter: blur(10px); /* Apply blur only to background */
+    z-index: -1;
+}
+
+/* Flex container for social icons */
+.social-links {
+    /* filter: brightness(150%); */
+    display: flex;
+    justify-content: center; /* Aligns icons horizontally */
+    align-items: center; /* Aligns icons vertically */
+    gap: 20px; /* Space between icons */
+    margin-top: 20px; /* Slight margin from the profile image */
+}
+
+/* LinkedIn icon styling */
+.linkedin-png {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Circle effect */
+    padding: 5px;
+    background-color: #2E2E2E;
+    display: block; /* Ensures image is displayed correctly */
+    object-fit: cover;
+    transition: background-color 0.3s ease;
+}
+
+/* GitHub icon styling */
+.github-png {
+    width: 40px;
+    height: 40px;
+    background-color: #2E2E2E;
+    border-radius: 50%; /* Circle effect */
+    padding: 5px;
+    display: block; /* Ensures image is displayed correctly */
+    object-fit: cover;
+    transition: background-color 0.3s ease;
+}
+
+.facebook-png{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Circle effect */
+    background-color: #2E2E2E;
+    /* background-color: #212121; */
+    padding: 5px;
+    display: block; /* Ensures image is displayed correctly */
+    object-fit: cover;
+    transition: background-color 0.3s ease;
+}
+
+.Line{
+    color: #ffffff;
+    font-weight: bold;
+    font-family: monospace;
+    font-size: x-large;
+}
+
+.facebook-png:hover, .facebook-png:focus{
+    background-color: #0165E1;
+}
+
+.github-png:hover , .github-png:focus{
+    background-color: #ffffff;
+}
+
+.linkedin-png:hover, .linkedin-png:focus{
+    background-color: #0A66C2; 
+
+}
