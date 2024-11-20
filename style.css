@@ -1,3 +1,7 @@
+*{
+    font-family: monospace;
+}
+
 /* Profile picture styling */
 .Me {
     width: 150px;
@@ -31,7 +35,7 @@ body::before {
     /* 008080*/
     /* background-image: url("https://th.bing.com/th/id/R.0dacd4acac8020b29e0821cd62f7158b?rik=9aDq6vNGUWq2Uw&pid=ImgRaw&r=0"); */
     
-    /* background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/16084.jpg"); */
+    /* background-image: url("images/icons/1706630744031.jpeg"); */
     background-repeat: no-repeat;
     background-size: cover;
     filter: blur(10px); /* Apply blur only to background */
@@ -91,6 +95,53 @@ body::before {
     font-size: x-large;
 }
 
+.tryhackme-png{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Circle effect */
+    background-color: #2E2E2E;
+    /* background-color: #212121; */
+    padding: 5px;
+    display: block; /* Ensures image is displayed correctly */
+    object-fit: cover;
+    transition: background-color 0.3s ease;
+}
+
+.medium-png{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Circle effect */
+    background-color: #2E2E2E;
+    /* background-color: #212121; */
+    padding: 5px;
+    display: block; /* Ensures image is displayed correctly */
+    object-fit: cover;
+    transition: background-color 0.3s ease;
+}
+
+.discord{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%; /* Circle effect */
+    background-color: #2E2E2E;
+    /* background-color: #212121; */
+    padding: 5px;
+    display: block; /* Ensures image is displayed correctly */
+    object-fit: cover;
+    transition: background-color 0.3s ease;
+}
+
+.discord:hover , .medium-png:focus{
+    background-color: #5865F2;
+}
+.medium-png:hover , .medium-png:focus{
+    background-color: #66cdaa;
+}
+
+.tryhackme-png:hover , .tryhackme-png:focus{
+    background-color: #ff0000b1;
+}
+
 .facebook-png:hover, .facebook-png:focus{
     background-color: #0165E1;
 }
@@ -101,5 +152,8 @@ body::before {
 
 .linkedin-png:hover, .linkedin-png:focus{
     background-color: #0A66C2; 
+}
 
+.copywrite{
+    color: #ece8e852;
 }
