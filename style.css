@@ -29,7 +29,7 @@ body::before {
     height: calc(100% + 40px);
     background-color: #2e2e2ed2;
     /* 008080*/
-    background-image: url("https://th.bing.com/th/id/R.0dacd4acac8020b29e0821cd62f7158b?rik=9aDq6vNGUWq2Uw&pid=ImgRaw&r=0");
+    /* background-image: url("https://th.bing.com/th/id/R.0dacd4acac8020b29e0821cd62f7158b?rik=9aDq6vNGUWq2Uw&pid=ImgRaw&r=0"); */
     
     /* background-image: url("https://4kwallpapers.com/images/walls/thumbs_3t/16084.jpg"); */
     background-repeat: no-repeat;
