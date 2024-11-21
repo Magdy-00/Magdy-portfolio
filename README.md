@@ -1,5 +1,8 @@
 # Magdy Portfolio
 
+## Live Preview:
+You can view the live version of the portfolio [here](https://magdy-00.github.io/Magdy-portfolio/).
+
 Welcome to the personal portfolio of **Magdy Yasser Mahmoud Khalil**. This site showcases my skills, experience, and various projects.
 
 ## Features:
@@ -11,8 +14,6 @@ Welcome to the personal portfolio of **Magdy Yasser Mahmoud Khalil**. This site 
 - HTML
 - CSS (Bootstrap 4)
 
-## Live Preview:
-You can view the live version of the portfolio [here](https://magdy-00.github.io/Magdy-portfolio/).
 
 ## How to View:
 1. Clone this repository.
