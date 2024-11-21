@@ -1,0 +1,39 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+    body {
+    color: #fff; /* White text color */
+    margin: 0;
+    padding: 0;
+    
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    color: #ffffff; 
+}
+
+p {
+    line-height: 2;
+}
+ul{
+    font-weight: bold;
+}
+.Technical{
+    font-weight: bolder;
+}
+
+.Home{
+    text-align: center;
+    font-weight: bolder;
+}
+
+a{
+    color: aquamarine;
+}

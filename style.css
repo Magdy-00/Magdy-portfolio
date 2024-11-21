@@ -157,3 +157,26 @@ body::before {
 .copywrite{
     color: #ece8e852;
 }
+
+.custom-navbar {
+    background-color: #343a404e; /* Dark gray background */
+    
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+    color: white; /* White text for links */
+    
+    
+}
+
+.custom-navbar .nav-link:hover {
+    color: #adb5bd; /* Light gray on hover */
+    
+}
+
+.contact {
+    margin-left: auto; /* Push the 'contact me' link to the left */
+}
+
+
