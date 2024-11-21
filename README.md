@@ -3,7 +3,7 @@
 ## Live Preview:
 You can view the live version of the portfolio [here](https://magdy-00.github.io/Magdy-portfolio/).
 
-Welcome to the personal portfolio of **Magdy Yasser Mahmoud Khalil**. This site showcases my skills, experience, and various projects.
+Welcome to the personal portfolio of **Magdy**. This site showcases my skills, experience, and various projects.
 
 ## Features:
 - **About Me**: Introduction to my background and experience.
