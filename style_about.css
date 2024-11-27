@@ -37,3 +37,6 @@ ul{
 a{
     color: aquamarine;
 }
+html, body{
+    overflow: auto;
+}
