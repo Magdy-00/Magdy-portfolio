@@ -2,7 +2,7 @@
     font-family: Arial, Helvetica, sans-serif;
     
 }
-    body {
+    body, .write-up {
     color: #fff; /* White text color */
     margin: 0;
     padding: 0;

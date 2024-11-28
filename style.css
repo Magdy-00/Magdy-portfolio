@@ -43,8 +43,8 @@
 	.github-png,
 	.facebook-png,
 	.tryhackme-png,
-	.medium-png,
-	.discord {
+	.medium-png
+	{
 		width: 30px;
 		height: 30px;
 		padding: 3px;
@@ -64,6 +64,7 @@
 	border: 6px solid #000000;
 	box-shadow: 0 4px 8px rgb(89, 88, 88);
 	position: relative;
+
 }
 
 /* Centering container */
@@ -77,7 +78,7 @@
 }
 
 /* Background styling */
-body::before {
+body::before{
 	content: "";
 	position: fixed;
 	top: -20px;
@@ -141,7 +142,7 @@ body::before {
 	transition: background-color 0.3s ease;
 }
 
-.Line {
+.Line{
 	color: #ffffff;
 	font-weight: bold;
 	font-family: monospace;
@@ -174,22 +175,8 @@ body::before {
 	transition: background-color 0.3s ease;
 }
 
-.discord {
-	width: 40px;
-	height: 40px;
-	border-radius: 50%; /* Circle effect */
-	background-color: #2e2e2e;
-	/* background-color: #212121; */
-	padding: 5px;
-	display: block; /* Ensures image is displayed correctly */
-	object-fit: cover;
-	transition: background-color 0.3s ease;
-}
 
-.discord:hover,
-.medium-png:focus {
-	background-color: #5865f2;
-}
+
 .medium-png:hover,
 .medium-png:focus {
 	background-color: #66cdaa;
@@ -213,11 +200,6 @@ body::before {
 .linkedin-png:hover,
 .linkedin-png:focus {
 	background-color: #0a66c2;
-}
-
-.copywrite {
-	color: #ece8e852;
-	position: absolute;
 }
 
 .custom-navbar {
