@@ -3,7 +3,7 @@
     
 }
     body, .write-up {
-    color: #fff; /* White text color */
+    color: #fff; 
     margin: 0;
     padding: 0;
     
@@ -14,6 +14,30 @@
     margin: 0 auto;
     padding: 20px;
 }
+
+.custom-navbar {
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    z-index: 1020; /* Ensures the navbar stays above other elements */
+    background-color: #343a404e; /* Maintains its background color */
+}
+
+.custom-navbar .navbar-brand,
+.custom-navbar .nav-link {
+    color: white; 
+}
+
+.custom-navbar .nav-link:hover {
+    color: #adb5bd; 
+}
+
+@media (min-width: 1000px) {
+    .contact {
+        margin-left: auto;
+    }
+}
+
 
 h1 {
     color: #ffffff; 
@@ -38,5 +62,5 @@ a{
     color: aquamarine;
 }
 html, body{
-    overflow: auto;
+    overflow: visible;
 }
