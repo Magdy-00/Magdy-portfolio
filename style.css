@@ -47,6 +47,7 @@
 	.facebook-png,
 	.tryhackme-png,
 	.medium-png
+	.twitter-png
 	{
 		width: 30px;
 		height: 30px;
@@ -166,6 +167,16 @@ body::before{
 	transition: background-color 0.3s ease;
 }
 
+.twitter-png {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%; 
+	background-color: #2e2e2e;
+	padding: 5px;
+	display: block; 
+	object-fit: cover;
+	transition: background-color 0.3s ease;
+}
 
 
 .medium-png:hover,
@@ -193,6 +204,11 @@ body::before{
 	background-color: #0a66c2;
 }
 
+.twitter-png:hover,
+.twitter-png:focus {
+	background-color: #1da1f2;
+}
+
 .custom-navbar {
 	background-color: #343a404e; 
 }
@@ -205,6 +221,7 @@ body::before{
 .custom-navbar .nav-link:hover {
 	color: #adb5bd; 
 }
+
 
 @media (min-width: 1000px) {
     .contact{
