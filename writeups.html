@@ -1,147 +1,192 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="style_about.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link
+	<head>
+		<meta charset="UTF-8" />
+		<title>Magdy's CTF Write-Ups</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Bootstrap & Custom Fonts -->
+		<link
 			rel="stylesheet"
 			href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
-			integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-			crossorigin="anonymous"
 		/>
-		<script
-			src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-			integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"
-			integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"
-			integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-			crossorigin="anonymous"
-		></script>
-        <link rel="icon" href="images/icons/profile_3135715.png" type="image/x-icon" />
-    <title>Magdy's CTF Write-Ups</title>
-    
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #121212;
-            color: #333;
-            line-height: 1.6;
-        }
+		<link
+			href="https://fonts.googleapis.com/css2?family=Fira+Code&family=Roboto:wght@400;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link
+			rel="icon"
+			href="images/icons/profile_3135715.png"
+			type="image/x-icon"
+		/>
 
-        .container {
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 20px;
-            background: #121212;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
-        }
+		<style>
+			body {
+				margin: 0;
+				font-family: "Roboto", sans-serif;
+				background-color: #0f0f0f;
+				color: #e0e0e0;
+			}
 
-        h1 {
-            text-align: center;
-            color: #ffffff;
-        }
+			.navbar {
+				background-color: #1a1a1a;
+				border-bottom: 1px solid #333;
+			}
 
-        .write-up {
-            margin-bottom: 20px;
-        }
+			.navbar-brand,
+			.nav-link {
+				color: #f5f5f5 !important;
+				font-weight: 500;
+			}
 
-        .write-up h2 {
-            margin-bottom: 10px;
-            color: #ffffff;
-            font-weight: bolder;
-        }
+			.navbar-brand:hover,
+			.nav-link:hover {
+				color: #00bfff !important;
+			}
 
-        .write-up p {
-            margin-bottom: 10px;
-            color: #fffbfb93;
-        }
+			.container {
+				max-width: 850px;
+				margin: 50px auto;
+				padding: 0 20px;
+			}
 
-        .write-up a {
-            display: inline-block;
-            text-decoration: none;
-            background-color: #0078d7;
-            color: white;
-            padding: 10px 15px;
-            border-radius: 5px;
-            transition: background-color 0.3s ease;
-        }
+			h1 {
+				text-align: center;
+				font-size: 2.5rem;
+				margin-bottom: 40px;
+				color: #ffffff;
+				font-family: "Fira Code", monospace;
+			}
 
-        .write-up a:hover {
-            background-color: #005fa3;
-        }
-    </style>
-    <link rel="stylesheet" herf="style.css"/>
-</head>
-<body>
-    <nav class="navbar navbar-expand-lg custom-navbar">
-        <a class="navbar-brand" href="index.html">Home</a>
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
-            <span class="navbar-toggler-icon"> </span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav w-100 d-flex">
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About</a>
-                </li>
+			.write-up {
+				background-color: #1c1c1c;
+				border-radius: 12px;
+				padding: 25px 30px;
+				margin-bottom: 25px;
+				box-shadow: 0 0 15px rgba(0, 0, 0, 0.25);
+				transition: transform 0.3s ease, box-shadow 0.3s ease;
+			}
 
-                <li class="nav-item ">
-                    <a class="nav-link" href="writeups.html">WriteUps</a>
-                </li>
+			.write-up:hover {
+				transform: translateY(-5px);
+				box-shadow: 0 0 25px rgba(0, 191, 255, 0.2);
+			}
 
-                <li class="nav-item contact">
-                    <a class="nav-link" href="mailto: Magdyyasser24@email.com"
-                        >Contact Me</a
-                    >
-                </li>
+			.write-up h2 {
+				color: #00bfff;
+				margin-bottom: 15px;
+				font-weight: 700;
+				font-size: 1.4rem;
+			}
 
+			.write-up p {
+				color: #cfcfcf;
+				font-size: 0.95rem;
+				line-height: 1.5;
+			}
 
-            </ul>
-        </div>
-    </nav>
+			.write-up a {
+				margin-top: 15px;
+				display: inline-block;
+				padding: 10px 18px;
+				background-color: #00bfff;
+				color: #000;
+				font-weight: bold;
+				border-radius: 6px;
+				text-decoration: none;
+				transition: background-color 0.3s ease;
+			}
 
+			.write-up a:hover {
+				background-color: #009acb;
+				color: #fff;
+			}
 
+			@media (max-width: 768px) {
+				.container {
+					margin-top: 30px;
+				}
 
+				.write-up {
+					padding: 20px;
+				}
+			}
+            .contact {
+                margin-left: auto;
+            }
+		</style>
+	</head>
 
-    <div class="container">
-        <h1>CTF Write-Ups</h1>
-        <br>
+	<body>
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-lg">
+			<a class="navbar-brand" href="index.html">Home</a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarNav"
+				aria-controls="navbarNav"
+				aria-expanded="false"
+				aria-label="Toggle navigation"
+			>
+				<span class="navbar-toggler-icon"> </span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav w-100 d-flex">
+					<li class="nav-item">
+						<a class="nav-link" href="about.html">About</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="writeups.html">WriteUps</a>
+					</li>
+					<li class="nav-item contact">
+						<a class="nav-link" href="mailto:Magdyyasser24@email.com"
+							>Contact Me</a
+						>
+					</li>
+				</ul>
+			</div>
+		</nav>
 
-        <div class="write-up">
-            <h2>Crack CTF 2024 Write-Up</h2>
-            <p>
-                A comprehensive write-up detailing the steps and techniques used to solve the Crack CTF 2024 challenge.
-            </p>
-            <a href="https://medium.com/@magdyyasser24/crack-ctf-2024-wirteup-354157d80340" target="_blank">Read More</a>
-        </div>
+		<!-- Blog Section -->
+		<div class="container">
+			<h1>CTF Write-Ups</h1>
+		</div>
 
-        <div class="write-up">
-            <h2>Basic Pentesting 1 Write-Up</h2>
-            <p>
-                A beginner-friendly guide to solving the Basic Pentesting 1 CTF, covering key concepts and practical steps.
-            </p>
-            <a href="https://medium.com/@magdyyasser24/basic-pentesting-1-605f6be3d328" target="_blank">Read More</a>
-        </div>
-    
-    </div>
-</body>
+		<!-- Fetch Medium Posts -->
+		<script>
+			fetch(
+				"https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@magdyyasser24"
+			)
+				.then((res) => res.json())
+				.then((data) => {
+					const container = document.querySelector(".container");
+
+					data.items
+						.filter((item) => item.categories.length > 0)
+						.slice(0, 6)
+						.forEach((post) => {
+							const div = document.createElement("div");
+							div.className = "write-up";
+							div.innerHTML = `
+              <h2>${post.title}</h2>
+              <p>${post.description
+								.replace(/<[^>]*>?/gm, "")
+								.substring(0, 160)}...</p>
+              <a href="${post.link}" target="_blank">Read More</a>
+            `;
+							container.appendChild(div);
+						});
+				})
+				.catch((err) => {
+					console.error("Failed to fetch Medium posts:", err);
+				});
+		</script>
+
+		<!-- Bootstrap JS -->
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js"></script>
+	</body>
 </html>
