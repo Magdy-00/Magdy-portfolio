@@ -1,0 +1,213 @@
+.about {
+  position: relative;
+  z-index: 1;
+}
+
+.about__grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.about__focus {
+  padding: 32px;
+  margin-bottom: 32px;
+}
+
+.about__focus-icon {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.about__focus h3 {
+  font-size: 1.3rem;
+  color: var(--accent-green);
+  margin-bottom: 16px;
+}
+
+.about__focus p {
+  color: var(--text-secondary);
+  line-height: 1.8;
+  margin-bottom: 12px;
+}
+
+.about__methodology {
+  font-style: italic;
+  border-left: 3px solid var(--accent-green);
+  padding-left: 16px;
+  margin-top: 16px;
+}
+
+.about__interests-title {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  margin-bottom: 16px;
+}
+
+.about__interests-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.about__interest-tag {
+  padding: 8px 18px;
+  background: var(--bg-card);
+  border: var(--glass-border);
+  border-radius: 25px;
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  color: var(--accent-blue);
+  transition: all var(--transition-fast);
+  cursor: default;
+}
+
+.about__interest-tag:hover {
+  border-color: var(--accent-blue);
+  background: var(--accent-blue-dim);
+  transform: translateY(-2px);
+  box-shadow: var(--glow-blue);
+}
+
+.about__timeline-title {
+  font-size: 1.3rem;
+  color: var(--text-primary);
+  margin-bottom: 24px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.about__exp {
+  padding: 24px;
+  margin-bottom: 16px;
+  position: relative;
+}
+
+.about__exp::before {
+  content: '';
+  position: absolute;
+  left: -20px;
+  top: 32px;
+  width: 10px;
+  height: 10px;
+  background: var(--accent-green);
+  border-radius: 50%;
+  box-shadow: 0 0 10px var(--accent-green);
+}
+
+.about__exp-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.about__exp-company {
+  font-size: 1.1rem;
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-weight: 600;
+}
+
+.about__exp-role {
+  font-size: 0.9rem;
+  color: var(--accent-blue);
+  font-family: var(--font-mono);
+  margin-top: 4px;
+}
+
+.about__exp-period {
+  white-space: nowrap;
+  font-size: 0.7rem !important;
+}
+
+.about__exp-highlights {
+  list-style: none;
+  padding: 0;
+}
+
+.about__exp-highlights li {
+  position: relative;
+  padding-left: 20px;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+  line-height: 1.7;
+  margin-bottom: 6px;
+}
+
+.about__exp-highlights li::before {
+  content: '▹';
+  position: absolute;
+  left: 0;
+  color: var(--accent-green);
+}
+
+@media (max-width: 768px) {
+  .about__grid {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .about__focus {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+
+  .about__focus h3 {
+    font-size: 1.1rem;
+  }
+
+  .about__focus p {
+    font-size: 0.9rem;
+  }
+
+  .about__methodology {
+    font-size: 0.88rem;
+  }
+
+  .about__exp {
+    padding: 18px;
+    margin-bottom: 12px;
+  }
+
+  .about__exp::before {
+    display: none;
+  }
+
+  .about__exp-header {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .about__exp-company {
+    font-size: 1rem;
+  }
+
+  .about__exp-role {
+    font-size: 0.85rem;
+  }
+
+  .about__exp-highlights li {
+    font-size: 0.85rem;
+    line-height: 1.6;
+  }
+
+  .about__interest-tag {
+    padding: 6px 14px;
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 380px) {
+  .about__focus {
+    padding: 16px;
+  }
+
+  .about__exp {
+    padding: 14px;
+  }
+}

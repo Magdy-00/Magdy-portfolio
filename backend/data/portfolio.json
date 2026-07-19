@@ -1,0 +1,146 @@
+{
+  "hero": {
+    "name": "Magdy Khalil",
+    "title": "Offensive Security Engineer / Penetration Tester",
+    "summary": "Security-focused engineer with hands-on experience in penetration testing, web application security, and vulnerability research. Passionate about breaking things to make them stronger.",
+    "socials": [
+      { "name": "GitHub", "url": "https://github.com/Magdy-00", "icon": "github" },
+      { "name": "LinkedIn", "url": "https://www.linkedin.com/in/magdy-khalil/", "icon": "linkedin" },
+      { "name": "Medium", "url": "https://medium.com/@magdyyasser24", "icon": "medium" },
+      { "name": "X", "url": "https://x.com/0xMagdy_Khalil", "icon": "x" }
+    ]
+  },
+  "about": {
+    "focus": "I specialize in offensive security — identifying vulnerabilities before attackers do. My methodology combines manual testing with automated tooling, following a structured approach: reconnaissance, enumeration, exploitation, and thorough reporting.",
+    "methodology": "I follow a methodical approach rooted in OWASP standards and real-world attack patterns. Every assessment begins with deep reconnaissance and ends with actionable remediation guidance.",
+    "interests": ["Web Application Security", "API Security", "Active Directory Attacks", "Cloud Security", "Network Penetration Testing", "Secure Code Review"],
+    "experience": [
+      {
+        "company": "El Rahma Group",
+        "role": "Web Developer (Security-Focused)",
+        "period": "Oct 2024 – Nov 2025",
+        "location": "Remote",
+        "highlights": [
+          "Built and maintained full-stack web applications using Laravel, with a strong focus on web application security.",
+          "Implemented secure authentication and authorization, followed secure coding practices, and protected applications against common vulnerabilities.",
+          "Developed scalable backend services and responsive frontend interfaces while prioritizing security, performance, and code quality."
+        ]
+      },
+      {
+        "company": "National Telecommunication Institute (NTI)",
+        "role": "Cyber Security Intern",
+        "period": "Aug 2025 – Sep 2025",
+        "location": "Remote",
+        "highlights": [
+          "Analyzed network traffic and incident logs to develop proactive response strategies, decreasing incident resolution time by 25%.",
+          "Participated in 100% of training sessions and simulated real-world cyber threats, practicing over 50 scenarios to enhance incident response readiness."
+        ]
+      },
+      {
+        "company": "CIB Egypt",
+        "role": "Summer Intern",
+        "period": "Sep 2024 – Oct 2024",
+        "location": "Remote",
+        "highlights": [
+          "Applied security principles in banking environments, contributing to the development of 3 cybersecurity protocols that reduced vulnerability risks by 15%.",
+          "Analyzed banking regulations to implement compliance measures across 5 banking units."
+        ]
+      },
+      {
+        "company": "ALEXBANK",
+        "role": "Summer Intern",
+        "period": "Aug 2024 – Sep 2024",
+        "location": "Remote",
+        "highlights": [
+          "Spearheaded development of AI project proposal presentations, increasing stakeholder engagement and securing approval with a 35% funding increase.",
+          "Assisted in implementing advanced security protocols that improved user security by 88%."
+        ]
+      }
+    ]
+  },
+  "skills": {
+    "categories": [
+      {
+        "name": "Web Security",
+        "icon": "web-security",
+        "items": ["OWASP Top 10", "Authentication & Authorization", "Business Logic Testing", "API Security", "JWT", "OAuth", "CORS", "CSP", "XXE", "SSTI", "SSRF", "Deserialization", "Race Conditions"]
+      },
+      {
+        "name": "Network Security",
+        "icon": "network-security",
+        "items": ["Enumeration", "Pivoting", "Privilege Escalation", "Active Directory", "SMB", "Kerberos", "LDAP"]
+      },
+      {
+        "name": "Programming",
+        "icon": "programming",
+        "items": ["Python", "Bash", "PowerShell", "JavaScript", "SQL", "Java", "C++", "C", "PHP", "HTML/CSS"]
+      },
+      {
+        "name": "Tools",
+        "icon": "tools",
+        "items": ["Burp Suite", "Nmap", "ffuf", "Gobuster", "SQLMap", "Metasploit", "Wireshark", "BloodHound", "CrackMapExec / NetExec", "Impacket", "Hashcat", "John the Ripper", "Hydra", "Feroxbuster"]
+      }
+    ]
+  },
+  "projects": {
+    "categories": [
+      {
+        "name": "My Projects",
+        "projects": [
+          { "title": "LeakOrigin", "description": "A comprehensive data breach detection platform designed to help organizations and individuals identify if their sensitive information has been compromised. Scans massive breach datasets and integrates with multiple threat intelligence APIs to provide real-time breach monitoring.", "tech": ["Flask", "MySQL", "Python", "APIs"], "featured": true, "link": "https://leakorigin.tech" },
+          { "title": "Web-Based Blockchain", "description": "A decentralized, secure ledger system implemented as a web application. Leverages JavaScript to create a blockchain running in the browser, enabling users to record transactions, create blocks with SHA-256 hashing, and maintain a tamper-proof chain of data with Proof of Work consensus.", "tech": ["JavaScript", "Node.js", "Cryptography"], "featured": true, "link": "https://github.com/Magdy-00/BC_Project" },
+          { "title": "XSS and SQLi Exploitation Tool", "description": "A penetration testing utility designed for ethical hackers and security researchers. Automates exploitation techniques for Cross-Site Scripting (XSS) and SQL Injection vulnerabilities, making it easier to identify security flaws in web applications.", "tech": ["Python", "Cybersecurity", "XSS", "SQLi"], "featured": true, "link": "https://github.com/Magdy-00/XSS-and-SQLI-Exploitation-Tool" },
+          { "title": "RefCollect", "description": "A web application solving the problem of scattered references for student teams. Add references with titles, links, comments, and categories, then organize them in a shared space accessible to all team members with search and filter capabilities.", "tech": ["PHP", "MySQL", "JavaScript", "HTML/CSS"], "featured": true, "link": "https://github.com/Magdy-00/graduation-project-resources" },
+          { "title": "Spam Filter using AI", "description": "Machine learning application using Naive Bayes classifier to automatically classify emails as spam or not spam. Involves preprocessing email text data, training on labeled datasets, and achieving high detection accuracy.", "tech": ["Python", "scikit-learn", "Pandas", "AI"], "featured": true, "link": "https://github.com/Magdy-00/Spam-Filter" },
+          { "title": "CPU Scheduling Algorithms", "description": "Java-based project implementing various CPU scheduling algorithms used in operating systems, including Round Robin, Priority Scheduling, Shortest-Job-First, and First-Come-First-Serve to demonstrate fundamental OS scheduling strategies.", "tech": ["Java", "Operating Systems"], "featured": true }
+        ]
+      }
+    ]
+  },
+  "writeups": {
+    "platforms": ["PortSwigger Web Security Academy", "DVWA", "OWASP Juice Shop", "PicoCTF"],
+    "mediumFeed": "https://medium.com/feed/@magdyyasser24"
+  },
+  "bugBounty": {
+    "findings": [
+      {
+        "type": "SQL Injection",
+        "severity": "Critical",
+        "description": "Discovered SQL injection vulnerability in a production web application's authentication mechanism, enabling full database access.",
+        "status": "Reported & Fixed"
+      },
+      {
+        "type": "SQL Injection",
+        "severity": "Critical",
+        "description": "Identified second-order SQL injection in user profile functionality, allowing extraction of sensitive data through crafted input.",
+        "status": "Reported & Fixed"
+      }
+    ],
+    "stats": {
+      "totalFindings": 2,
+      "criticalFindings": 2,
+      "companiesHelped": "Multiple organizations"
+    }
+  },
+  "certifications": [
+    { "name": "Penetration Testing and Ethical Hacking", "issuer": "CYBRARY", "date": "Apr 2024" },
+    { "name": "ISC2 Certified in Cybersecurity", "issuer": "Coursera (ISC2)", "date": "Feb 2024" },
+    { "name": "Cybersecurity Bootcamp", "issuer": "CyberTalents", "date": "Nov 2023" },
+    { "name": "Google Cybersecurity Certificate", "issuer": "Coursera (Google)", "date": "Sep 2023" },
+    { "name": "Python & Django Guide", "issuer": "Udemy", "date": "Feb 2023" }
+  ],
+  "github": {
+    "username": "Magdy-00",
+    "featuredRepos": [
+      "XSS-Exploitation-Tool",
+      "LeakOrigin",
+      "Web-Based-Blockchain"
+    ]
+  },
+  "contact": {
+    "email": "magdyyasser24@gmail.com",
+    "x": "https://x.com/0xMagdy_Khalil",
+    "github": "https://github.com/Magdy-00",
+    "linkedin": "https://www.linkedin.com/in/magdy-khalil/"
+  }
+}

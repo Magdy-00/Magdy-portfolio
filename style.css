@@ -45,8 +45,7 @@
 	.linkedin-png,
 	.github-png,
 	.facebook-png,
-	.tryhackme-png,
-	.medium-png
+	.medium-png,
 	.twitter-png
 	{
 		width: 30px;
@@ -144,16 +143,7 @@ body::before{
 	height: 5px;
 }
 
-.tryhackme-png {
-	width: 40px;
-	height: 40px;
-	border-radius: 50%; 
-	background-color: #2e2e2e;
-	padding: 5px;
-	display: block; 
-	object-fit: cover;
-	transition: background-color 0.3s ease;
-}
+
 
 .medium-png {
 	width: 40px;
@@ -184,10 +174,7 @@ body::before{
 	background-color: #66cdaa;
 }
 
-.tryhackme-png:hover,
-.tryhackme-png:focus {
-	background-color: #ff0000b1;
-}
+
 
 .facebook-png:hover,
 .facebook-png:focus {
