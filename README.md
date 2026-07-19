@@ -1,24 +1,16 @@
-# Magdy Portfolio
+# React + Vite
 
-## Live Preview:
-You can view the live version of the portfolio [here](https://magdy-00.github.io/Magdy-portfolio/).
+This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
 
-Welcome to the personal portfolio of **Magdy**. This site showcases my skills, experience, and various projects.
+Currently, two official plugins are available:
 
-## Features:
-- **About Me**: Introduction to my background and experience.
-- **Skills**: Highlights of my technical expertise in cybersecurity and web development.
-- **Social Links**: Links to my professional profiles (LinkedIn, GitHub, etc.).
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## Technologies Used:
-- HTML
-- CSS (Bootstrap 4)
+## React Compiler
 
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
 
-## How to View:
-1. Clone this repository.
-2. Open `index.html` in your browser to see the portfolio.
+## Expanding the Oxlint configuration
 
----
-
-Feel free to contact me for any collaboration or opportunities!
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.

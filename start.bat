@@ -6,14 +6,14 @@ echo.
 
 :: Start Flask backend
 echo [1/2] Starting Flask backend on port 5000...
-start "Flask Backend" cmd /k "cd /d %~dp0backend && python app.py"
+start "Flask Backend" cmd /k "cd /d %~dp0api && python app.py"
 
 :: Wait a moment for Flask to start
 timeout /t 3 /nobreak > nul
 
 :: Start React frontend
 echo [2/2] Starting React frontend on port 5173...
-start "React Frontend" cmd /k "cd /d %~dp0frontend && npm run dev"
+start "React Frontend" cmd /k "cd /d %~dp0 && npm run dev"
 
 echo.
 echo ============================================

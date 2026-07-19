@@ -87,6 +87,8 @@
   min-height: 44px;
   align-items: center;
   justify-content: center;
+  position: absolute;
+  right: 24px;
 }
 
 .navbar__toggle span {
