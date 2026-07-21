@@ -31,23 +31,61 @@ export default function Hero({ data }) {
   const [showCursor, setShowCursor] = useState(true)
 
   useEffect(() => {
-    const text = data.title
-    let i = 0
-    const typeInterval = setInterval(() => {
-      if (i <= text.length) {
-        setDisplayText(text.slice(0, i))
-        i++
+    const prefix = data.title.includes(' / ') ? data.title.split(' / ')[0] + ' / ' : data.title + ' / ';
+    
+    let isTypingPrefix = true;
+    let prefixIndex = 0;
+    let roleIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+    let timeout;
+
+    const roles = [
+      "Penetration Tester",
+      "Ethical Hacker",
+      "Backend Developer"
+    ];
+
+    const type = () => {
+      if (isTypingPrefix) {
+        if (prefixIndex <= prefix.length) {
+          setDisplayText(prefix.slice(0, prefixIndex));
+          prefixIndex++;
+          timeout = setTimeout(type, 50);
+        } else {
+          isTypingPrefix = false;
+          timeout = setTimeout(type, 100);
+        }
       } else {
-        clearInterval(typeInterval)
+        const currentRole = roles[roleIndex];
+        
+        setDisplayText(prefix + currentRole.slice(0, charIndex));
+
+        let typingSpeed = isDeleting ? 30 : 50;
+
+        if (!isDeleting && charIndex === currentRole.length) {
+          typingSpeed = 3000;
+          isDeleting = true;
+        } else if (isDeleting && charIndex === 0) {
+          isDeleting = false;
+          roleIndex = (roleIndex + 1) % roles.length;
+          typingSpeed = 500;
+        } else {
+          charIndex += isDeleting ? -1 : 1;
+        }
+
+        timeout = setTimeout(type, typingSpeed);
       }
-    }, 50)
+    };
+
+    timeout = setTimeout(type, 50);
 
     const cursorInterval = setInterval(() => {
       setShowCursor(prev => !prev)
     }, 530)
 
     return () => {
-      clearInterval(typeInterval)
+      clearTimeout(timeout)
       clearInterval(cursorInterval)
     }
   }, [data.title])
@@ -93,14 +131,17 @@ export default function Hero({ data }) {
         </div>
 
         <div className="hero__cta">
-          <Link to="/projects" className="hero__btn hero__btn--primary">
-            View My Work
+          <Link to="/about" className="hero__btn hero__btn--primary">
+            View My Experience
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" width="18" height="18">
               <path d="M7 17l9.2-9.2M17 17V7H7"/>
             </svg>
           </Link>
-          <Link to="/contact" className="hero__btn hero__btn--secondary">
-            Get In Touch
+          <Link to="/projects" className="hero__btn hero__btn--secondary">
+            View My Projects
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" width="18" height="18">
+              <polyline points="9 18 15 12 9 6"></polyline>
+            </svg>
           </Link>
         </div>
 
